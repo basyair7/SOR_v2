@@ -15,7 +15,7 @@ download : https://www.arduino.cc/en/main/software
 
 6. Tekan Port > pilih com apa saja jika ada, jika tidak ada.. drivers arduino belum diinstall dalam pc
 
-7. Upload atau tekan sketch > Upload *Tunggu sampai selesai... 
+7. Tekan verify lalu Upload atau tekan sketch > Tekan verify lalu tekan Upload *Tunggu sampai selesai... 
 
 	!1!1WARNING : JANGAN PERNAH SESEKALI MENCABUT KABEL DATA SEBELUM DONE UPLOAD!1!1
 

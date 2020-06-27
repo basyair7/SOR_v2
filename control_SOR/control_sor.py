@@ -164,6 +164,9 @@ def delete():
             id_dev INTEGER PRIMARY KEY
             )""")
 
+    conn.commit()
+    conn.close()
+
 # Create home App tkinter
 home = Tk(); home.geometry('300x270')
 home.title("Control SOR v2.5")

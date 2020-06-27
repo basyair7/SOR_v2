@@ -1,12 +1,14 @@
 	***Cara membuka aplikasi Control SOR_v2.5***
 
 1. Install python 3 ++
+download : https://www.python.org/downloads/
 
 2. Install python tkinter (cari saja di google, karena banyak cara)
 
 3. Install module python
 
 4. Silahkan install text editor dan buka control_sor.py di text editor (seperti atom, vscode, atau sublime text)
+recommend download : https://atom.io
 
 5. Silahkan ubah koneksi board diawal program control_sor (bila arduino terkoneksi di com4, maka ubah com4 )
 

@@ -3,7 +3,7 @@ from tkinter import font as tkfont
 import serial
 
 # create connect to serial
-#board = serial.Serial('com3', 9600) # see in device manager or port in tool arduino
+board = serial.Serial('com3', 9600) # see in device manager or port in tool arduino
 
 # create function saklar
 # Saklar 1

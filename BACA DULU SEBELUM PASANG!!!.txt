@@ -1,6 +1,7 @@
 	***CARA MENGGUNAKAN SOR SEBELUM DIGUNAKAN***
 
 1. Install aplikasi Arduino di Windows
+download : https://www.arduino.cc/en/main/software
 
 2. Hubungkan Device SOR dengan kabel data (USB Arduino Nano)
 

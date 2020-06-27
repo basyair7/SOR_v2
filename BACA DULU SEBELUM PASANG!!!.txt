@@ -1,0 +1,23 @@
+	***CARA MENGGUNAKAN SOR SEBELUM DIGUNAKAN***
+
+1. Install aplikasi Arduino di Windows
+
+2. Hubungkan Device SOR dengan kabel data (USB Arduino Nano)
+
+	(!!WARNING : Salin/Copy dulu folder SOR_v1.0 ke Harddisk atau ke dalam dokumen, Baru buka!!)
+
+3. Buka aplikasi Arduino yang telah diinstal, Buka file > Open > SOR_v1.0 yang telah disalin ke harddisk > SOR_v1.0.ino 
+
+4. Tekan Tools > Board > Pilih "Arduino Nano"
+
+5. Tekan Processors > pilih "ATmega 328P(Old Bootloader)"
+
+6. Tekan Port > pilih com apa saja jika ada, jika tidak ada.. drivers arduino belum diinstall dalam pc
+
+7. Upload atau tekan sketch > Upload *Tunggu sampai selesai... 
+
+	!1!1WARNING : JANGAN PERNAH SESEKALI MENCABUT KABEL DATA SEBELUM DONE UPLOAD!1!1
+
+8. Selesai... Tahap selanjutnya cara menggunakan SOR setelah diprogram
+
+

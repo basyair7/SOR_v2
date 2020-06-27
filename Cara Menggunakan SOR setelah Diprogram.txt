@@ -1,0 +1,26 @@
+	***Cara membuka aplikasi Control SOR_v2.5***
+
+1. Install python 3 ++
+
+2. Install python tkinter (cari saja di google, karena banyak cara)
+
+3. Install module python
+
+4. Silahkan install text editor dan buka control_sor.py di text editor (seperti atom, vscode, atau sublime text)
+
+5. Silahkan ubah koneksi board diawal program control_sor (bila arduino terkoneksi di com4, maka ubah com4 )
+
+6. Buka aplikasi control_sor.py lewat cmd (ex : "python control_sor.py" *tanpa tanda kutip 2)
+
+7. selesai... Jika ada bermasalah, silahkan hubungi creator pada sosmed line/wa
+
+
+NOTE : Cara install Module python di cmd seperti dibawah ini:
+
+1. tekan logo windows + R,
+2. ketik "cmd" *tanpa tanda kutip 2
+3. ketik "python --version" *untuk melihat versi python sudah berjalan di cmd atau belum
+4. update pip sebelum install module, ketik "python -m pip install --upgrade pip"
+4. setelah itu, ketik "python -m pip install pyserial" di cmd
+5. lalu ketik "python -m pip install serial"
+6. cek module terinstall atau belum, ketik "python -m pip show pyserial" dan "python -m pip show serial"

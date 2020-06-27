@@ -1,4 +1,4 @@
-	***CARA MENGGUNAKAN SOR SEBELUM DIGUNAKAN***
+	***CARA SETUP SOR SEBELUM DIGUNAKAN***
 
 1. Install aplikasi Arduino di Windows
 download : https://www.arduino.cc/en/main/software

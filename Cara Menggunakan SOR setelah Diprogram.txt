@@ -7,14 +7,16 @@ download : https://www.python.org/downloads/
 
 3. Install module python
 
-4. Silahkan install text editor dan buka control_sor.py di text editor (seperti atom, vscode, atau sublime text)
-recommend download : https://atom.io
+4. Buka aplikasi control_sor.py lewat cmd (ex : "python control_sor.py" *tanpa tanda kutip 2)
 
 5. Silahkan ubah koneksi board diawal program control_sor (bila arduino terkoneksi di com4, maka ubah com4 )
 
-6. Buka aplikasi control_sor.py lewat cmd (ex : "python control_sor.py" *tanpa tanda kutip 2)
+6. Input Port COM hanya sekali saja
 
-7. selesai... Jika ada bermasalah, silahkan hubungi creator pada sosmed line/wa
+7. Bila mengganti port lain, harap terlebih dahulu menekan tombol Delete Port lalu tutup aplikasi dan buka kembali
+*Seperti pada steps ke 4
+
+8. selesai... Jika ada bermasalah, silahkan hubungi creator pada sosmed line/wa
 
 
 NOTE : Cara install Module python di cmd seperti dibawah ini:

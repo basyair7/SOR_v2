@@ -44,7 +44,7 @@ def con_device():
         board_com.grid(row=5, column=5, columnspan=2, pady=10, padx=4)
 
     elif alright == 1:
-        messagebox.showwarning('Informasi', 'No. ID Device sudah ada')
+        messagebox.showwarning('Informasi', 'Port COM sudah terconnect')
 
     conn.commit()
     conn.close()

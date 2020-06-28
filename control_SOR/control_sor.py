@@ -176,6 +176,11 @@ def delete():
     conn.commit()
     conn.close()
 
+def keluar():
+    answer = messagebox.askquestion("Keluar", "Anda yakin keluar dari Aplikasi?")
+    if answer == 'yes':
+        quit()
+
 # Create home App tkinter
 home = Tk(); home.geometry('300x320')
 home.title("Control SOR v2.5")
@@ -191,8 +196,13 @@ btn_con = Button(home, text="Connect", command=con_device)
 btn_con.grid(row=1, column=5, columnspan=1, pady=10, padx=10, ipadx=23)
 
 # Create option button
+# Tombol opsi
 btn_opsi = Button(home, text="Tombol Opsi", command=opsi)
 btn_opsi.grid(row=1, column=6, columnspan=1, padx=10, pady=10, ipadx=23)
+
+# keluar
+btn_keluar = Button(home, text="Keluar", command=keluar)
+btn_keluar.grid(row=2, column=6, columnspan=1, ipadx=40)
 
 # Create button delete device
 btn_del = Button(home, text="Delete Port", command=delete)

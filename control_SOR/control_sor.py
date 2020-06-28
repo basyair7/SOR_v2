@@ -32,13 +32,22 @@ def con_device():
         {
             'id_dev': id_drive
         })
-        # Commit changes
-        conn.commit()
-        # Close connection
-        conn.close()
+
+        # Show port driver
+        c.execute("SELECT *, oid FROM arduinoData")
+        driver_port = c.fetchall()
+        print_device= ""
+        for record in driver_port:
+            print_device += f"COM{record[0]}"
+
+        board_com = Label(home, text=print_device)
+        board_com.grid(row=5, column=5, columnspan=2, pady=10, padx=4)
 
     elif alright == 1:
         messagebox.showwarning('Informasi', 'No. ID Device sudah ada')
+
+    conn.commit()
+    conn.close()
 
     id_dev.delete(0, END)
 
@@ -48,9 +57,9 @@ def opsi():
     # Create cursor
     c = conn.cursor()
     c.execute("SELECT *, oid FROM arduinoData")
-    records = c.fetchall()
+    driver_port = c.fetchall()
     print_device = ""
-    for record in records:
+    for record in driver_port:
         print_device += f"COM{record[0]}"
 
     board = serial.Serial(print_device, 9600) # see in device manager or port in tool arduino
@@ -168,11 +177,11 @@ def delete():
     conn.close()
 
 # Create home App tkinter
-home = Tk(); home.geometry('300x270')
+home = Tk(); home.geometry('300x320')
 home.title("Control SOR v2.5")
 
 # Port board
-lbl_input = Label(home, text="Port COM : ")
+lbl_input = Label(home, text="Port COM\t: ")
 lbl_input.grid(row=0, column=5, padx=10,pady=(10,0))
 id_dev = Entry(home, width=20)
 id_dev.grid(row=0, column=6, padx=20, pady=(10,0))
@@ -192,8 +201,11 @@ btn_del.grid(row=2, column=5, columnspan=1, ipadx=17)
 # create note
 note = Label(home, text="NOTE :\n1. Port COM Hanya sekali isi!\n\n2. Setelah tekan Delete Port,\nharap tutup aplikasi dan buka kembali\n")
 note.grid(row=3, column=5, columnspan=5, pady=10, padx=10)
+board_conn = Label(home, text="Connect\t\t: ")
+board_conn.grid(row=5, column=4, columnspan=2, pady=10, padx=4)
+
 # Create author app
-author = Label(home, text="Creator : @basyair7")
+author = Label(home, text="Creator\t:  @basyair7\n App ver\t:  v2.5\n@2020")
 author.grid(row=4, column=5, columnspan=5, padx=10)
 
 # Commit changes

@@ -176,9 +176,10 @@ def delete():
     conn.commit()
     conn.close()
 
-def keluar():
-    answer = messagebox.askquestion("Keluar", "Anda yakin keluar dari Aplikasi?")
+def del_exit():
+    answer = messagebox.askquestion("Delete", "Anda yakin menghapus port dan\nkeluar dari Aplikasi?")
     if answer == 'yes':
+        delete()
         quit()
 
 # Create home App tkinter
@@ -200,12 +201,8 @@ btn_con.grid(row=1, column=5, columnspan=1, pady=10, padx=10, ipadx=23)
 btn_opsi = Button(home, text="Tombol Opsi", command=opsi)
 btn_opsi.grid(row=1, column=6, columnspan=1, padx=10, pady=10, ipadx=23)
 
-# keluar
-btn_keluar = Button(home, text="Keluar", command=keluar)
-btn_keluar.grid(row=2, column=6, columnspan=1, ipadx=40)
-
 # Create button delete device
-btn_del = Button(home, text="Delete Port", command=delete)
+btn_del = Button(home, text="Delete Port", command=del_exit)
 btn_del.grid(row=2, column=5, columnspan=1, ipadx=17)
 
 # create note
